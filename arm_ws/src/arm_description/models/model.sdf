@@ -66,6 +66,48 @@
                 </geometry>
             </visual>
         </link>
+        <link name='arm3'>  
+            <pose>0 0 2.65 0 0 0</pose>
+            <gravity>0</gravity>
+            <collision name='collision'>
+                <geometry>
+                    <cylinder>
+                        <radius>.05</radius>
+                        <length>1</length>
+                    </cylinder>
+                </geometry>
+            </collision>
+
+            <visual name='visual'>
+                <geometry>
+                    <cylinder>
+                        <radius>.05</radius>
+                        <length>1</length>
+                    </cylinder>
+                </geometry>
+            </visual>
+        </link>
+        <link name='arm4'>
+            <pose>0 0 3.4 0 0 0</pose>
+            <gravity>0</gravity>
+            <collision name='collision'>
+                <geometry>
+                    <cylinder>
+                        <radius>.05</radius>
+                        <length>.5</length>
+                    </cylinder>
+                </geometry>
+            </collision>
+
+            <visual name='visual'>
+                <geometry>
+                    <cylinder>
+                        <radius>.05</radius>
+                        <length>.5</length>
+                    </cylinder>
+                </geometry>
+            </visual>
+        </link>
         <joint type="revolute" name="chasis_arm1_joint">
             <pose>0 0 -0.025 0 0 0</pose>
             <child>arm1</child>
@@ -80,6 +122,43 @@
             <parent>arm1</parent>
             <axis>
                 <xyz>1 0 0</xyz>
+            </axis>
+        </joint>
+        <joint name="arm2_arm3" type="revolute">
+            <parent>arm2</parent>
+            <child>arm3</child>
+            <pose>0 0 -0.5 0 0 0</pose>
+            <axis>
+                <xyz>1 0 0</xyz>
+                <dynamics>
+                    <damping>1.0</damping>
+                    <friction>.3</friction>
+                    <limit>
+                        <lower>1.0</lower>
+                        <upper>1.0</upper>
+                        <effort>40</effort>
+                        <velocity>1.0</velocity>
+                    </limit>
+                </dynamics>
+            </axis>
+        </joint>
+
+        <joint name="arm3_arm4" type="revolute">
+            <parent>arm3</parent>
+            <child>arm4</child>
+            <pose>0 0 -0.25 0 0 0</pose>
+            <axis>
+                <xyz>1 0 0</xyz>
+                <dynamics>
+                    <damping>1.0</damping>
+                    <friction>.3</friction>
+                    <limit>
+                        <lower>1.0</lower>
+                        <upper>1.0</upper>
+                        <effort>40</effort>
+                        <velocity>1.0</velocity>
+                    </limit>
+                </dynamics>
             </axis>
         </joint>
         <plugin name="arm_control" filename="libarm_gazebo.so" />

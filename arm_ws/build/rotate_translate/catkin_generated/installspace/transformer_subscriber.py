@@ -42,7 +42,7 @@ def callback(data):
 
     retVector = np.dot(translation_matrix, np.dot(rotation_along_z_matrix, np.dot(rotation_along_y_matrix, np.dot(rotation_along_x_matrix, given_vector))))
     
-    msg = Outputmsg()
+    msg = OutputType()
     msg.x = retVector[0]
     msg.y = retVector[1]
     msg.z = retVector[2]
