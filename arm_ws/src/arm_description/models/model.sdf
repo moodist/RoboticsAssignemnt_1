@@ -124,7 +124,7 @@
                 <xyz>1 0 0</xyz>
             </axis>
         </joint>
-        <joint name="arm2_arm3" type="revolute">
+        <joint name="arm2_arm3_joint" type="revolute">
             <parent>arm2</parent>
             <child>arm3</child>
             <pose>0 0 -0.5 0 0 0</pose>
@@ -143,7 +143,7 @@
             </axis>
         </joint>
 
-        <joint name="arm3_arm4" type="revolute">
+        <joint name="arm3_arm4_joint" type="revolute">
             <parent>arm3</parent>
             <child>arm4</child>
             <pose>0 0 -0.25 0 0 0</pose>

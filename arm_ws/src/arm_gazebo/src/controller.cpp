@@ -3,76 +3,163 @@
 #include <gazebo/physics/physics.hh>
 #include <gazebo/common/common.hh>
 #include <ignition/math/Vector3.hh>
-#include <iostream>
+#include "ros/ros.h"
+#include "arm_gazebo/JointPose.h"
+
 namespace gazebo
 {
-	class ModelPush : public ModelPlugin
-	{
-	public:
-		void Load(physics::ModelPtr _parent, sdf::ElementPtr /*_sdf*/)
-		{
-			// Store the pointer to the model
-			this->model = _parent;
+  class Controller1 : public ModelPlugin
+  {
+    public: Controller1() : ModelPlugin()
+    {
+        printf("Hello World!\n");
+    }
+    
+    public: void Load(physics::ModelPtr _parent, sdf::ElementPtr /*_sdf*/)
+    {
+        this->model = _parent;
 
-			// // intiantiate the joint controller
-			this->jointController = this->model->GetJointController();
+        this->jointController = this->model->GetJointController();
+        float angleDegree = 50; 
+        float rad = M_PI * angleDegree/180 ;
 
-			// // set your PID values
-			this->pid = common::PID(30.1, 10.01, 10.03);
+        this->joint_1_pid = common::PID(14, 11.2, 11);
 
-			auto joint_name = "arm1_arm2_joint";
+        this->joint_2_pid = common::PID(17, 12.1, 12);
 
-			std::string name = this->model->GetJoint("arm1_arm2_joint")->GetScopedName();
+        this->joint_3_pid = common::PID(13, 9.1, 9);
 
-			this->jointController->SetPositionPID(name, pid);
+        this->joint_4_pid = common::PID(16, 13.3, 12);
 
-			// Listen to the update event. This event is broadcast every
-			// simulation iteration.
-			this->updateConnection = event::Events::ConnectWorldUpdateBegin(
-				std::bind(&ModelPush::OnUpdate, this));
-		}
+        this->joint_1_name = "chasis_arm1_joint";
+        this->joint_2_name = "arm1_arm2_joint";
+        this->joint_3_name = "arm2_arm3_joint";
+        this->joint_4_name = "arm3_arm4_joint";
 
-		// Called by the world update start event
-	public:
-		void OnUpdate()
-		{
-			float angleDegree = -90;
-			float rad = M_PI * angleDegree / 180;
+               
 
-			std::string name = this->model->GetJoint("arm1_arm2_joint")->GetScopedName();
-			// this->jointController->SetPositionPID(name, pid);
-			// this->jointController->SetPositionTarget(name, rad);
-			// this->jointController->Update();
+        auto j1 = this->model->GetJoint(joint_1_name);
+        auto j2 = this->model->GetJoint(joint_2_name);
+        auto j3 = this->model->GetJoint(joint_3_name);
+        auto j4 = this->model->GetJoint(joint_4_name);
 
-			// Get joint position by index. 
-			// 0 returns rotation accross X axis
-			// 1 returns rotation accross Y axis
-			// 2 returns rotation accross Z axis
-			// If the Joint has only Z axis for rotation, 0 returns that value and 1 and 2 return nan
-			double a1 = physics::JointState(this->model->GetJoint("arm1_arm2_joint")).Position(0);
-			// double a2 = this->model->GetJoint("chasis_arm1_joint").Position(0);
-			// double a3 = physics::JointState(this->model->GetJoint("chasis_arm1_joint")).Position(2);
-			std::cout << "Current arm1_arm2_joint values: " << a1 * 180.0 / M_PI << std::endl;
-		}
+        std::string j_name_1 = j1->GetScopedName();
 
-		// a pointer that points to a model object
-	private:
-		physics::ModelPtr model;
+        this->jointController->SetPositionPID(j_name_1, joint_1_pid);
+        this->jointController->SetPositionTarget(j_name_1, 1.0);
 
-		// 	// A joint controller object
-		// 	// Takes PID value and apply angular velocity
-		// 	//  or sets position of the angles
-	private:
-		physics::JointControllerPtr jointController;
+        std::string j_name_2 = j2->GetScopedName();
 
-	private:
-		event::ConnectionPtr updateConnection;
+        this->jointController->SetPositionPID(j_name_2, joint_2_pid);
+        this->jointController->SetPositionTarget(j_name_2, -1.0);
 
-		// // 	// PID object
-	private:
-		common::PID pid;
-	};
+        std::string j_name_3 = j3->GetScopedName();
 
-	// Register this plugin with the simulator
-	GZ_REGISTER_MODEL_PLUGIN(ModelPush)
+        this->jointController->SetPositionPID(j_name_3, joint_3_pid);
+        this->jointController->SetPositionTarget(j_name_3, rad);
+
+        std::string j_name_4 = j4->GetScopedName();
+
+        this->jointController->SetPositionPID(j_name_4, joint_4_pid);
+        this->jointController->SetPositionTarget(j_name_4, -rad);
+
+        
+        this->rosPub = this->rosNode.advertise<arm_gazebo::JointPose>("jointpose", 10);
+
+        this->updateConnection = event::Events::ConnectWorldUpdateBegin(
+            std::bind(&Controller1::OnUpdate, this)
+        );
+ 
+
+        this->rosSub = this->rosNode.subscribe("arm_control",1000,&Controller1::chatterCallback,this);
+
+    }
+
+    void chatterCallback(const arm_gazebo::JointPose::ConstPtr& msg)
+    {
+        float angleDegree = 50; 
+        float rad = M_PI * angleDegree/180 ;
+
+        auto j1 = this->model->GetJoint(this->joint_1_name);
+        auto j2 = this->model->GetJoint(this->joint_2_name);
+        auto j3 = this->model->GetJoint(this->joint_3_name);
+        auto j4 = this->model->GetJoint(this->joint_4_name);
+
+        std::string j_name_1 = j1->GetScopedName();
+
+        this->jointController->SetPositionPID(j_name_1, this->joint_1_pid);
+        this->jointController->SetPositionTarget(j_name_1, msg->angleOne);
+
+        std::string j_name_2 = j2->GetScopedName();
+
+        this->jointController->SetPositionPID(j_name_2, this->joint_2_pid);
+        this->jointController->SetPositionTarget(j_name_2, msg->angleTwo);
+
+        std::string j_name_3 = j3->GetScopedName();
+
+        this->jointController->SetPositionPID(j_name_3, this->joint_3_pid);
+        this->jointController->SetPositionTarget(j_name_3, msg->angleThree);
+
+        std::string J_name_4 = j4->GetScopedName();
+
+        this->jointController->SetPositionPID(J_name_4, this->joint_4_pid);
+        this->jointController->SetPositionTarget(J_name_4, msg->angleFour);
+
+
+    }
+    
+    //called by the world update start event
+    public : void OnUpdate()
+    {
+        auto j1 = this->model->GetJoint(this->joint_1_name);
+        auto j2 = this->model->GetJoint(this->joint_2_name);
+        auto j3 = this->model->GetJoint(this->joint_3_name);
+        auto j4 = this->model->GetJoint(this->joint_4_name);
+
+        arm_gazebo::JointPose msg;
+
+        msg.angleOne = j1->Position();
+        msg.angleTwo = j2->Position();
+        msg.angleThree = j3->Position();
+        msg.angleFour = j4->Position();
+
+        this->rosPub.publish(msg);
+
+        this->jointController->Update();
+    }
+
+    //Pointer to the model
+    private: physics::ModelPtr model;
+
+    //Pointer to the model
+    private: physics::JointControllerPtr jointController;
+
+    //Pointer to the update event connection
+    private: event::ConnectionPtr updateConnection;
+
+    private: common::PID joint_1_pid;
+
+    private: common::PID joint_2_pid;
+
+    private: common::PID joint_3_pid;
+
+    private: common::PID joint_4_pid;
+
+    private: std::string joint_1_name;
+    private: std::string joint_2_name;
+    private: std::string joint_3_name;
+    private: std::string joint_4_name;
+
+
+    private: ros::NodeHandle rosNode;
+    private: ros::Publisher rosPub;
+    private: ros::Subscriber rosSub;
+ 
+
+  };
+  GZ_REGISTER_MODEL_PLUGIN(Controller1)
 }
+
+
+ 
+//  chatter_pub.publish(msg);

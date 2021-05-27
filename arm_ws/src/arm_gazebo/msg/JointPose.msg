@@ -1,4 +1,4 @@
-float64 jointOneAngle
-float64 jointTwoAngle
-float64 jointThreeAngle
-float64 jointFourAngle
+float64 angleOne
+float64 angleTwo
+float64 angleThree
+float64 angleFour
