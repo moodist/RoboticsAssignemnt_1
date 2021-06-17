@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/g/Robotics-Assignment-1/arm_ws/src
+CMAKE_SOURCE_DIR = /home/leo/RoboticsAssignemnt_1/arm_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/g/Robotics-Assignment-1/arm_ws/build
+CMAKE_BINARY_DIR = /home/leo/RoboticsAssignemnt_1/arm_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,9 +137,9 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/g/Robotics-Assignment-1/arm_ws/build/CMakeFiles /home/g/Robotics-Assignment-1/arm_ws/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leo/RoboticsAssignemnt_1/arm_ws/build/CMakeFiles /home/leo/RoboticsAssignemnt_1/arm_ws/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/g/Robotics-Assignment-1/arm_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leo/RoboticsAssignemnt_1/arm_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -662,69 +662,17 @@ rotate_translate_generate_messages_py/fast:
 .PHONY : rotate_translate_generate_messages_py/fast
 
 #=============================================================================
-# Target rules for targets named arm_gazebo
+# Target rules for targets named arm_gazebo_genpy
 
 # Build rule for target.
-arm_gazebo: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 arm_gazebo
-.PHONY : arm_gazebo
+arm_gazebo_genpy: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 arm_gazebo_genpy
+.PHONY : arm_gazebo_genpy
 
 # fast build rule for target.
-arm_gazebo/fast:
-	$(MAKE) -f arm_gazebo/CMakeFiles/arm_gazebo.dir/build.make arm_gazebo/CMakeFiles/arm_gazebo.dir/build
-.PHONY : arm_gazebo/fast
-
-#=============================================================================
-# Target rules for targets named arm_gazebo_generate_messages_lisp
-
-# Build rule for target.
-arm_gazebo_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 arm_gazebo_generate_messages_lisp
-.PHONY : arm_gazebo_generate_messages_lisp
-
-# fast build rule for target.
-arm_gazebo_generate_messages_lisp/fast:
-	$(MAKE) -f arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_lisp.dir/build.make arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_lisp.dir/build
-.PHONY : arm_gazebo_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named arm_gazebo_generate_messages_nodejs
-
-# Build rule for target.
-arm_gazebo_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 arm_gazebo_generate_messages_nodejs
-.PHONY : arm_gazebo_generate_messages_nodejs
-
-# fast build rule for target.
-arm_gazebo_generate_messages_nodejs/fast:
-	$(MAKE) -f arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_nodejs.dir/build.make arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_nodejs.dir/build
-.PHONY : arm_gazebo_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named arm_gazebo_generate_messages
-
-# Build rule for target.
-arm_gazebo_generate_messages: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 arm_gazebo_generate_messages
-.PHONY : arm_gazebo_generate_messages
-
-# fast build rule for target.
-arm_gazebo_generate_messages/fast:
-	$(MAKE) -f arm_gazebo/CMakeFiles/arm_gazebo_generate_messages.dir/build.make arm_gazebo/CMakeFiles/arm_gazebo_generate_messages.dir/build
-.PHONY : arm_gazebo_generate_messages/fast
-
-#=============================================================================
-# Target rules for targets named arm_gazebo_genlisp
-
-# Build rule for target.
-arm_gazebo_genlisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 arm_gazebo_genlisp
-.PHONY : arm_gazebo_genlisp
-
-# fast build rule for target.
-arm_gazebo_genlisp/fast:
-	$(MAKE) -f arm_gazebo/CMakeFiles/arm_gazebo_genlisp.dir/build.make arm_gazebo/CMakeFiles/arm_gazebo_genlisp.dir/build
-.PHONY : arm_gazebo_genlisp/fast
+arm_gazebo_genpy/fast:
+	$(MAKE) -f arm_gazebo/CMakeFiles/arm_gazebo_genpy.dir/build.make arm_gazebo/CMakeFiles/arm_gazebo_genpy.dir/build
+.PHONY : arm_gazebo_genpy/fast
 
 #=============================================================================
 # Target rules for targets named arm_gazebo_gennodejs
@@ -740,17 +688,95 @@ arm_gazebo_gennodejs/fast:
 .PHONY : arm_gazebo_gennodejs/fast
 
 #=============================================================================
-# Target rules for targets named arm_gazebo_genpy
+# Target rules for targets named arm_gazebo_generate_messages_nodejs
 
 # Build rule for target.
-arm_gazebo_genpy: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 arm_gazebo_genpy
-.PHONY : arm_gazebo_genpy
+arm_gazebo_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 arm_gazebo_generate_messages_nodejs
+.PHONY : arm_gazebo_generate_messages_nodejs
 
 # fast build rule for target.
-arm_gazebo_genpy/fast:
-	$(MAKE) -f arm_gazebo/CMakeFiles/arm_gazebo_genpy.dir/build.make arm_gazebo/CMakeFiles/arm_gazebo_genpy.dir/build
-.PHONY : arm_gazebo_genpy/fast
+arm_gazebo_generate_messages_nodejs/fast:
+	$(MAKE) -f arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_nodejs.dir/build.make arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_nodejs.dir/build
+.PHONY : arm_gazebo_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named arm_gazebo_genlisp
+
+# Build rule for target.
+arm_gazebo_genlisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 arm_gazebo_genlisp
+.PHONY : arm_gazebo_genlisp
+
+# fast build rule for target.
+arm_gazebo_genlisp/fast:
+	$(MAKE) -f arm_gazebo/CMakeFiles/arm_gazebo_genlisp.dir/build.make arm_gazebo/CMakeFiles/arm_gazebo_genlisp.dir/build
+.PHONY : arm_gazebo_genlisp/fast
+
+#=============================================================================
+# Target rules for targets named arm_gazebo_generate_messages_lisp
+
+# Build rule for target.
+arm_gazebo_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 arm_gazebo_generate_messages_lisp
+.PHONY : arm_gazebo_generate_messages_lisp
+
+# fast build rule for target.
+arm_gazebo_generate_messages_lisp/fast:
+	$(MAKE) -f arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_lisp.dir/build.make arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_lisp.dir/build
+.PHONY : arm_gazebo_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named arm_gazebo
+
+# Build rule for target.
+arm_gazebo: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 arm_gazebo
+.PHONY : arm_gazebo
+
+# fast build rule for target.
+arm_gazebo/fast:
+	$(MAKE) -f arm_gazebo/CMakeFiles/arm_gazebo.dir/build.make arm_gazebo/CMakeFiles/arm_gazebo.dir/build
+.PHONY : arm_gazebo/fast
+
+#=============================================================================
+# Target rules for targets named arm_gazebo_generate_messages_py
+
+# Build rule for target.
+arm_gazebo_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 arm_gazebo_generate_messages_py
+.PHONY : arm_gazebo_generate_messages_py
+
+# fast build rule for target.
+arm_gazebo_generate_messages_py/fast:
+	$(MAKE) -f arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_py.dir/build.make arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_py.dir/build
+.PHONY : arm_gazebo_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named INVERSE_K
+
+# Build rule for target.
+INVERSE_K: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 INVERSE_K
+.PHONY : INVERSE_K
+
+# fast build rule for target.
+INVERSE_K/fast:
+	$(MAKE) -f arm_gazebo/CMakeFiles/INVERSE_K.dir/build.make arm_gazebo/CMakeFiles/INVERSE_K.dir/build
+.PHONY : INVERSE_K/fast
+
+#=============================================================================
+# Target rules for targets named arm_gazebo_generate_messages
+
+# Build rule for target.
+arm_gazebo_generate_messages: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 arm_gazebo_generate_messages
+.PHONY : arm_gazebo_generate_messages
+
+# fast build rule for target.
+arm_gazebo_generate_messages/fast:
+	$(MAKE) -f arm_gazebo/CMakeFiles/arm_gazebo_generate_messages.dir/build.make arm_gazebo/CMakeFiles/arm_gazebo_generate_messages.dir/build
+.PHONY : arm_gazebo_generate_messages/fast
 
 #=============================================================================
 # Target rules for targets named _arm_gazebo_generate_messages_check_deps_JointPose
@@ -766,6 +792,32 @@ _arm_gazebo_generate_messages_check_deps_JointPose/fast:
 .PHONY : _arm_gazebo_generate_messages_check_deps_JointPose/fast
 
 #=============================================================================
+# Target rules for targets named GRIPPER
+
+# Build rule for target.
+GRIPPER: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 GRIPPER
+.PHONY : GRIPPER
+
+# fast build rule for target.
+GRIPPER/fast:
+	$(MAKE) -f arm_gazebo/CMakeFiles/GRIPPER.dir/build.make arm_gazebo/CMakeFiles/GRIPPER.dir/build
+.PHONY : GRIPPER/fast
+
+#=============================================================================
+# Target rules for targets named _arm_gazebo_generate_messages_check_deps_GripperMessage
+
+# Build rule for target.
+_arm_gazebo_generate_messages_check_deps_GripperMessage: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _arm_gazebo_generate_messages_check_deps_GripperMessage
+.PHONY : _arm_gazebo_generate_messages_check_deps_GripperMessage
+
+# fast build rule for target.
+_arm_gazebo_generate_messages_check_deps_GripperMessage/fast:
+	$(MAKE) -f arm_gazebo/CMakeFiles/_arm_gazebo_generate_messages_check_deps_GripperMessage.dir/build.make arm_gazebo/CMakeFiles/_arm_gazebo_generate_messages_check_deps_GripperMessage.dir/build
+.PHONY : _arm_gazebo_generate_messages_check_deps_GripperMessage/fast
+
+#=============================================================================
 # Target rules for targets named arm_gazebo_generate_messages_cpp
 
 # Build rule for target.
@@ -779,6 +831,32 @@ arm_gazebo_generate_messages_cpp/fast:
 .PHONY : arm_gazebo_generate_messages_cpp/fast
 
 #=============================================================================
+# Target rules for targets named _arm_gazebo_generate_messages_check_deps_fk
+
+# Build rule for target.
+_arm_gazebo_generate_messages_check_deps_fk: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _arm_gazebo_generate_messages_check_deps_fk
+.PHONY : _arm_gazebo_generate_messages_check_deps_fk
+
+# fast build rule for target.
+_arm_gazebo_generate_messages_check_deps_fk/fast:
+	$(MAKE) -f arm_gazebo/CMakeFiles/_arm_gazebo_generate_messages_check_deps_fk.dir/build.make arm_gazebo/CMakeFiles/_arm_gazebo_generate_messages_check_deps_fk.dir/build
+.PHONY : _arm_gazebo_generate_messages_check_deps_fk/fast
+
+#=============================================================================
+# Target rules for targets named _arm_gazebo_generate_messages_check_deps_ik
+
+# Build rule for target.
+_arm_gazebo_generate_messages_check_deps_ik: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _arm_gazebo_generate_messages_check_deps_ik
+.PHONY : _arm_gazebo_generate_messages_check_deps_ik
+
+# fast build rule for target.
+_arm_gazebo_generate_messages_check_deps_ik/fast:
+	$(MAKE) -f arm_gazebo/CMakeFiles/_arm_gazebo_generate_messages_check_deps_ik.dir/build.make arm_gazebo/CMakeFiles/_arm_gazebo_generate_messages_check_deps_ik.dir/build
+.PHONY : _arm_gazebo_generate_messages_check_deps_ik/fast
+
+#=============================================================================
 # Target rules for targets named arm_gazebo_gencpp
 
 # Build rule for target.
@@ -790,6 +868,19 @@ arm_gazebo_gencpp: cmake_check_build_system
 arm_gazebo_gencpp/fast:
 	$(MAKE) -f arm_gazebo/CMakeFiles/arm_gazebo_gencpp.dir/build.make arm_gazebo/CMakeFiles/arm_gazebo_gencpp.dir/build
 .PHONY : arm_gazebo_gencpp/fast
+
+#=============================================================================
+# Target rules for targets named _arm_gazebo_generate_messages_check_deps_PositionMessage
+
+# Build rule for target.
+_arm_gazebo_generate_messages_check_deps_PositionMessage: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _arm_gazebo_generate_messages_check_deps_PositionMessage
+.PHONY : _arm_gazebo_generate_messages_check_deps_PositionMessage
+
+# fast build rule for target.
+_arm_gazebo_generate_messages_check_deps_PositionMessage/fast:
+	$(MAKE) -f arm_gazebo/CMakeFiles/_arm_gazebo_generate_messages_check_deps_PositionMessage.dir/build.make arm_gazebo/CMakeFiles/_arm_gazebo_generate_messages_check_deps_PositionMessage.dir/build
+.PHONY : _arm_gazebo_generate_messages_check_deps_PositionMessage/fast
 
 #=============================================================================
 # Target rules for targets named arm_gazebo_generate_messages_eus
@@ -816,19 +907,6 @@ arm_gazebo_geneus: cmake_check_build_system
 arm_gazebo_geneus/fast:
 	$(MAKE) -f arm_gazebo/CMakeFiles/arm_gazebo_geneus.dir/build.make arm_gazebo/CMakeFiles/arm_gazebo_geneus.dir/build
 .PHONY : arm_gazebo_geneus/fast
-
-#=============================================================================
-# Target rules for targets named arm_gazebo_generate_messages_py
-
-# Build rule for target.
-arm_gazebo_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 arm_gazebo_generate_messages_py
-.PHONY : arm_gazebo_generate_messages_py
-
-# fast build rule for target.
-arm_gazebo_generate_messages_py/fast:
-	$(MAKE) -f arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_py.dir/build.make arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_py.dir/build
-.PHONY : arm_gazebo_generate_messages_py/fast
 
 # Help Target
 help:
@@ -881,19 +959,25 @@ help:
 	@echo "... rotate_translate_genlisp"
 	@echo "... _rotate_translate_generate_messages_check_deps_OutputType"
 	@echo "... rotate_translate_generate_messages_py"
-	@echo "... arm_gazebo"
-	@echo "... arm_gazebo_generate_messages_lisp"
-	@echo "... arm_gazebo_generate_messages_nodejs"
-	@echo "... arm_gazebo_generate_messages"
-	@echo "... arm_gazebo_genlisp"
-	@echo "... arm_gazebo_gennodejs"
 	@echo "... arm_gazebo_genpy"
+	@echo "... arm_gazebo_gennodejs"
+	@echo "... arm_gazebo_generate_messages_nodejs"
+	@echo "... arm_gazebo_genlisp"
+	@echo "... arm_gazebo_generate_messages_lisp"
+	@echo "... arm_gazebo"
+	@echo "... arm_gazebo_generate_messages_py"
+	@echo "... INVERSE_K"
+	@echo "... arm_gazebo_generate_messages"
 	@echo "... _arm_gazebo_generate_messages_check_deps_JointPose"
+	@echo "... GRIPPER"
+	@echo "... _arm_gazebo_generate_messages_check_deps_GripperMessage"
 	@echo "... arm_gazebo_generate_messages_cpp"
+	@echo "... _arm_gazebo_generate_messages_check_deps_fk"
+	@echo "... _arm_gazebo_generate_messages_check_deps_ik"
 	@echo "... arm_gazebo_gencpp"
+	@echo "... _arm_gazebo_generate_messages_check_deps_PositionMessage"
 	@echo "... arm_gazebo_generate_messages_eus"
 	@echo "... arm_gazebo_geneus"
-	@echo "... arm_gazebo_generate_messages_py"
 .PHONY : help
 
 

@@ -1,8 +1,8 @@
-# Install script for directory: /home/g/Robotics-Assignment-1/arm_ws/src/rotate_translate
+# Install script for directory: /home/leo/RoboticsAssignemnt_1/arm_ws/src/rotate_translate
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/g/Robotics-Assignment-1/arm_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/leo/RoboticsAssignemnt_1/arm_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,59 +39,59 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rotate_translate/msg" TYPE FILE FILES
-    "/home/g/Robotics-Assignment-1/arm_ws/src/rotate_translate/msg/InputType.msg"
-    "/home/g/Robotics-Assignment-1/arm_ws/src/rotate_translate/msg/OutputType.msg"
+    "/home/leo/RoboticsAssignemnt_1/arm_ws/src/rotate_translate/msg/InputType.msg"
+    "/home/leo/RoboticsAssignemnt_1/arm_ws/src/rotate_translate/msg/OutputType.msg"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/rotate_translate" TYPE PROGRAM FILES "/home/g/Robotics-Assignment-1/arm_ws/build/rotate_translate/catkin_generated/installspace/transformer_subscriber.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/rotate_translate" TYPE PROGRAM FILES "/home/leo/RoboticsAssignemnt_1/arm_ws/build/rotate_translate/catkin_generated/installspace/transformer_subscriber.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rotate_translate/cmake" TYPE FILE FILES "/home/g/Robotics-Assignment-1/arm_ws/build/rotate_translate/catkin_generated/installspace/rotate_translate-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rotate_translate/cmake" TYPE FILE FILES "/home/leo/RoboticsAssignemnt_1/arm_ws/build/rotate_translate/catkin_generated/installspace/rotate_translate-msg-paths.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/g/Robotics-Assignment-1/arm_ws/devel/include/rotate_translate")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/leo/RoboticsAssignemnt_1/arm_ws/devel/include/rotate_translate")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/g/Robotics-Assignment-1/arm_ws/devel/share/roseus/ros/rotate_translate")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/leo/RoboticsAssignemnt_1/arm_ws/devel/share/roseus/ros/rotate_translate")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/g/Robotics-Assignment-1/arm_ws/devel/share/common-lisp/ros/rotate_translate")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/leo/RoboticsAssignemnt_1/arm_ws/devel/share/common-lisp/ros/rotate_translate")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/g/Robotics-Assignment-1/arm_ws/devel/share/gennodejs/ros/rotate_translate")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/leo/RoboticsAssignemnt_1/arm_ws/devel/share/gennodejs/ros/rotate_translate")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/g/Robotics-Assignment-1/arm_ws/devel/lib/python3/dist-packages/rotate_translate")
+  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/leo/RoboticsAssignemnt_1/arm_ws/devel/lib/python3/dist-packages/rotate_translate")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/g/Robotics-Assignment-1/arm_ws/devel/lib/python3/dist-packages/rotate_translate")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/leo/RoboticsAssignemnt_1/arm_ws/devel/lib/python3/dist-packages/rotate_translate")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/g/Robotics-Assignment-1/arm_ws/build/rotate_translate/catkin_generated/installspace/rotate_translate.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/leo/RoboticsAssignemnt_1/arm_ws/build/rotate_translate/catkin_generated/installspace/rotate_translate.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rotate_translate/cmake" TYPE FILE FILES "/home/g/Robotics-Assignment-1/arm_ws/build/rotate_translate/catkin_generated/installspace/rotate_translate-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rotate_translate/cmake" TYPE FILE FILES "/home/leo/RoboticsAssignemnt_1/arm_ws/build/rotate_translate/catkin_generated/installspace/rotate_translate-msg-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rotate_translate/cmake" TYPE FILE FILES
-    "/home/g/Robotics-Assignment-1/arm_ws/build/rotate_translate/catkin_generated/installspace/rotate_translateConfig.cmake"
-    "/home/g/Robotics-Assignment-1/arm_ws/build/rotate_translate/catkin_generated/installspace/rotate_translateConfig-version.cmake"
+    "/home/leo/RoboticsAssignemnt_1/arm_ws/build/rotate_translate/catkin_generated/installspace/rotate_translateConfig.cmake"
+    "/home/leo/RoboticsAssignemnt_1/arm_ws/build/rotate_translate/catkin_generated/installspace/rotate_translateConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rotate_translate" TYPE FILE FILES "/home/g/Robotics-Assignment-1/arm_ws/src/rotate_translate/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rotate_translate" TYPE FILE FILES "/home/leo/RoboticsAssignemnt_1/arm_ws/src/rotate_translate/package.xml")
 endif()
 

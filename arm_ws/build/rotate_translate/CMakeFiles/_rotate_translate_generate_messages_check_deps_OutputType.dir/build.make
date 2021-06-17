@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/g/Robotics-Assignment-1/arm_ws/src
+CMAKE_SOURCE_DIR = /home/leo/RoboticsAssignemnt_1/arm_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/g/Robotics-Assignment-1/arm_ws/build
+CMAKE_BINARY_DIR = /home/leo/RoboticsAssignemnt_1/arm_ws/build
 
 # Utility rule file for _rotate_translate_generate_messages_check_deps_OutputType.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/g/Robotics-Assignment-1/arm_ws/build
 include rotate_translate/CMakeFiles/_rotate_translate_generate_messages_check_deps_OutputType.dir/progress.make
 
 rotate_translate/CMakeFiles/_rotate_translate_generate_messages_check_deps_OutputType:
-	cd /home/g/Robotics-Assignment-1/arm_ws/build/rotate_translate && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py rotate_translate /home/g/Robotics-Assignment-1/arm_ws/src/rotate_translate/msg/OutputType.msg 
+	cd /home/leo/RoboticsAssignemnt_1/arm_ws/build/rotate_translate && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py rotate_translate /home/leo/RoboticsAssignemnt_1/arm_ws/src/rotate_translate/msg/OutputType.msg 
 
 _rotate_translate_generate_messages_check_deps_OutputType: rotate_translate/CMakeFiles/_rotate_translate_generate_messages_check_deps_OutputType
 _rotate_translate_generate_messages_check_deps_OutputType: rotate_translate/CMakeFiles/_rotate_translate_generate_messages_check_deps_OutputType.dir/build.make
@@ -67,10 +67,10 @@ rotate_translate/CMakeFiles/_rotate_translate_generate_messages_check_deps_Outpu
 .PHONY : rotate_translate/CMakeFiles/_rotate_translate_generate_messages_check_deps_OutputType.dir/build
 
 rotate_translate/CMakeFiles/_rotate_translate_generate_messages_check_deps_OutputType.dir/clean:
-	cd /home/g/Robotics-Assignment-1/arm_ws/build/rotate_translate && $(CMAKE_COMMAND) -P CMakeFiles/_rotate_translate_generate_messages_check_deps_OutputType.dir/cmake_clean.cmake
+	cd /home/leo/RoboticsAssignemnt_1/arm_ws/build/rotate_translate && $(CMAKE_COMMAND) -P CMakeFiles/_rotate_translate_generate_messages_check_deps_OutputType.dir/cmake_clean.cmake
 .PHONY : rotate_translate/CMakeFiles/_rotate_translate_generate_messages_check_deps_OutputType.dir/clean
 
 rotate_translate/CMakeFiles/_rotate_translate_generate_messages_check_deps_OutputType.dir/depend:
-	cd /home/g/Robotics-Assignment-1/arm_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/g/Robotics-Assignment-1/arm_ws/src /home/g/Robotics-Assignment-1/arm_ws/src/rotate_translate /home/g/Robotics-Assignment-1/arm_ws/build /home/g/Robotics-Assignment-1/arm_ws/build/rotate_translate /home/g/Robotics-Assignment-1/arm_ws/build/rotate_translate/CMakeFiles/_rotate_translate_generate_messages_check_deps_OutputType.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/leo/RoboticsAssignemnt_1/arm_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/leo/RoboticsAssignemnt_1/arm_ws/src /home/leo/RoboticsAssignemnt_1/arm_ws/src/rotate_translate /home/leo/RoboticsAssignemnt_1/arm_ws/build /home/leo/RoboticsAssignemnt_1/arm_ws/build/rotate_translate /home/leo/RoboticsAssignemnt_1/arm_ws/build/rotate_translate/CMakeFiles/_rotate_translate_generate_messages_check_deps_OutputType.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : rotate_translate/CMakeFiles/_rotate_translate_generate_messages_check_deps_OutputType.dir/depend
 

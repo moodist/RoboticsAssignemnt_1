@@ -1,10 +1,10 @@
 
 "use strict";
 
-let InputType = require('./InputType.js');
 let OutputType = require('./OutputType.js');
+let InputType = require('./InputType.js');
 
 module.exports = {
-  InputType: InputType,
   OutputType: OutputType,
+  InputType: InputType,
 };

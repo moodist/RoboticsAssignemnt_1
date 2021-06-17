@@ -5,7 +5,7 @@ from rotate_translate.msg import InputType, OutputType
 import numpy as np
 import math
 
-pub = rospy.Publisher('transformer', OutputType, queue_size=10)
+pub = rospy.Publisher('transformer_out', OutputType, queue_size=10)
 def callback(data):
     #rospy.loginfo(rospy.get_caller_id() + "I heard %s", data.data)
     rospy.loginfo("received x: %s, y: %s, z: %s, alpha: %s, beta: %s, gamma: %s, d: %s " % (data.x, data.y, data.z, data.alpha, data.beta, data.gamma, data.d))
@@ -59,7 +59,7 @@ def listener():
     # run simultaneously.
     rospy.init_node('listener', anonymous=True)
 
-    rospy.Subscriber("transformer", InputType, callback)
+    rospy.Subscriber("transformer_in", InputType, callback)
 
     # spin() simply keeps python from exiting until this node is stopped
     rospy.spin()

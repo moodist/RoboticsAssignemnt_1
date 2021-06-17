@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/g/Robotics-Assignment-1/arm_ws/devel/include/rotate_translate/InputType.h"
-  "/home/g/Robotics-Assignment-1/arm_ws/devel/include/rotate_translate/OutputType.h"
+  "/home/leo/RoboticsAssignemnt_1/arm_ws/devel/include/rotate_translate/InputType.h"
+  "/home/leo/RoboticsAssignemnt_1/arm_ws/devel/include/rotate_translate/OutputType.h"
   "CMakeFiles/rotate_translate_generate_messages_cpp"
 )
 

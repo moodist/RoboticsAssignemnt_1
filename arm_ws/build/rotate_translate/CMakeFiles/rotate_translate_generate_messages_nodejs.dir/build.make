@@ -43,33 +43,33 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/g/Robotics-Assignment-1/arm_ws/src
+CMAKE_SOURCE_DIR = /home/leo/RoboticsAssignemnt_1/arm_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/g/Robotics-Assignment-1/arm_ws/build
+CMAKE_BINARY_DIR = /home/leo/RoboticsAssignemnt_1/arm_ws/build
 
 # Utility rule file for rotate_translate_generate_messages_nodejs.
 
 # Include the progress variables for this target.
 include rotate_translate/CMakeFiles/rotate_translate_generate_messages_nodejs.dir/progress.make
 
-rotate_translate/CMakeFiles/rotate_translate_generate_messages_nodejs: /home/g/Robotics-Assignment-1/arm_ws/devel/share/gennodejs/ros/rotate_translate/msg/InputType.js
-rotate_translate/CMakeFiles/rotate_translate_generate_messages_nodejs: /home/g/Robotics-Assignment-1/arm_ws/devel/share/gennodejs/ros/rotate_translate/msg/OutputType.js
+rotate_translate/CMakeFiles/rotate_translate_generate_messages_nodejs: /home/leo/RoboticsAssignemnt_1/arm_ws/devel/share/gennodejs/ros/rotate_translate/msg/InputType.js
+rotate_translate/CMakeFiles/rotate_translate_generate_messages_nodejs: /home/leo/RoboticsAssignemnt_1/arm_ws/devel/share/gennodejs/ros/rotate_translate/msg/OutputType.js
 
 
-/home/g/Robotics-Assignment-1/arm_ws/devel/share/gennodejs/ros/rotate_translate/msg/InputType.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
-/home/g/Robotics-Assignment-1/arm_ws/devel/share/gennodejs/ros/rotate_translate/msg/InputType.js: /home/g/Robotics-Assignment-1/arm_ws/src/rotate_translate/msg/InputType.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/g/Robotics-Assignment-1/arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from rotate_translate/InputType.msg"
-	cd /home/g/Robotics-Assignment-1/arm_ws/build/rotate_translate && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/g/Robotics-Assignment-1/arm_ws/src/rotate_translate/msg/InputType.msg -Irotate_translate:/home/g/Robotics-Assignment-1/arm_ws/src/rotate_translate/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p rotate_translate -o /home/g/Robotics-Assignment-1/arm_ws/devel/share/gennodejs/ros/rotate_translate/msg
+/home/leo/RoboticsAssignemnt_1/arm_ws/devel/share/gennodejs/ros/rotate_translate/msg/InputType.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
+/home/leo/RoboticsAssignemnt_1/arm_ws/devel/share/gennodejs/ros/rotate_translate/msg/InputType.js: /home/leo/RoboticsAssignemnt_1/arm_ws/src/rotate_translate/msg/InputType.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/leo/RoboticsAssignemnt_1/arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from rotate_translate/InputType.msg"
+	cd /home/leo/RoboticsAssignemnt_1/arm_ws/build/rotate_translate && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/leo/RoboticsAssignemnt_1/arm_ws/src/rotate_translate/msg/InputType.msg -Irotate_translate:/home/leo/RoboticsAssignemnt_1/arm_ws/src/rotate_translate/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p rotate_translate -o /home/leo/RoboticsAssignemnt_1/arm_ws/devel/share/gennodejs/ros/rotate_translate/msg
 
-/home/g/Robotics-Assignment-1/arm_ws/devel/share/gennodejs/ros/rotate_translate/msg/OutputType.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
-/home/g/Robotics-Assignment-1/arm_ws/devel/share/gennodejs/ros/rotate_translate/msg/OutputType.js: /home/g/Robotics-Assignment-1/arm_ws/src/rotate_translate/msg/OutputType.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/g/Robotics-Assignment-1/arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from rotate_translate/OutputType.msg"
-	cd /home/g/Robotics-Assignment-1/arm_ws/build/rotate_translate && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/g/Robotics-Assignment-1/arm_ws/src/rotate_translate/msg/OutputType.msg -Irotate_translate:/home/g/Robotics-Assignment-1/arm_ws/src/rotate_translate/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p rotate_translate -o /home/g/Robotics-Assignment-1/arm_ws/devel/share/gennodejs/ros/rotate_translate/msg
+/home/leo/RoboticsAssignemnt_1/arm_ws/devel/share/gennodejs/ros/rotate_translate/msg/OutputType.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
+/home/leo/RoboticsAssignemnt_1/arm_ws/devel/share/gennodejs/ros/rotate_translate/msg/OutputType.js: /home/leo/RoboticsAssignemnt_1/arm_ws/src/rotate_translate/msg/OutputType.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/leo/RoboticsAssignemnt_1/arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from rotate_translate/OutputType.msg"
+	cd /home/leo/RoboticsAssignemnt_1/arm_ws/build/rotate_translate && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/leo/RoboticsAssignemnt_1/arm_ws/src/rotate_translate/msg/OutputType.msg -Irotate_translate:/home/leo/RoboticsAssignemnt_1/arm_ws/src/rotate_translate/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p rotate_translate -o /home/leo/RoboticsAssignemnt_1/arm_ws/devel/share/gennodejs/ros/rotate_translate/msg
 
 rotate_translate_generate_messages_nodejs: rotate_translate/CMakeFiles/rotate_translate_generate_messages_nodejs
-rotate_translate_generate_messages_nodejs: /home/g/Robotics-Assignment-1/arm_ws/devel/share/gennodejs/ros/rotate_translate/msg/InputType.js
-rotate_translate_generate_messages_nodejs: /home/g/Robotics-Assignment-1/arm_ws/devel/share/gennodejs/ros/rotate_translate/msg/OutputType.js
+rotate_translate_generate_messages_nodejs: /home/leo/RoboticsAssignemnt_1/arm_ws/devel/share/gennodejs/ros/rotate_translate/msg/InputType.js
+rotate_translate_generate_messages_nodejs: /home/leo/RoboticsAssignemnt_1/arm_ws/devel/share/gennodejs/ros/rotate_translate/msg/OutputType.js
 rotate_translate_generate_messages_nodejs: rotate_translate/CMakeFiles/rotate_translate_generate_messages_nodejs.dir/build.make
 
 .PHONY : rotate_translate_generate_messages_nodejs
@@ -80,10 +80,10 @@ rotate_translate/CMakeFiles/rotate_translate_generate_messages_nodejs.dir/build:
 .PHONY : rotate_translate/CMakeFiles/rotate_translate_generate_messages_nodejs.dir/build
 
 rotate_translate/CMakeFiles/rotate_translate_generate_messages_nodejs.dir/clean:
-	cd /home/g/Robotics-Assignment-1/arm_ws/build/rotate_translate && $(CMAKE_COMMAND) -P CMakeFiles/rotate_translate_generate_messages_nodejs.dir/cmake_clean.cmake
+	cd /home/leo/RoboticsAssignemnt_1/arm_ws/build/rotate_translate && $(CMAKE_COMMAND) -P CMakeFiles/rotate_translate_generate_messages_nodejs.dir/cmake_clean.cmake
 .PHONY : rotate_translate/CMakeFiles/rotate_translate_generate_messages_nodejs.dir/clean
 
 rotate_translate/CMakeFiles/rotate_translate_generate_messages_nodejs.dir/depend:
-	cd /home/g/Robotics-Assignment-1/arm_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/g/Robotics-Assignment-1/arm_ws/src /home/g/Robotics-Assignment-1/arm_ws/src/rotate_translate /home/g/Robotics-Assignment-1/arm_ws/build /home/g/Robotics-Assignment-1/arm_ws/build/rotate_translate /home/g/Robotics-Assignment-1/arm_ws/build/rotate_translate/CMakeFiles/rotate_translate_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/leo/RoboticsAssignemnt_1/arm_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/leo/RoboticsAssignemnt_1/arm_ws/src /home/leo/RoboticsAssignemnt_1/arm_ws/src/rotate_translate /home/leo/RoboticsAssignemnt_1/arm_ws/build /home/leo/RoboticsAssignemnt_1/arm_ws/build/rotate_translate /home/leo/RoboticsAssignemnt_1/arm_ws/build/rotate_translate/CMakeFiles/rotate_translate_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : rotate_translate/CMakeFiles/rotate_translate_generate_messages_nodejs.dir/depend
 

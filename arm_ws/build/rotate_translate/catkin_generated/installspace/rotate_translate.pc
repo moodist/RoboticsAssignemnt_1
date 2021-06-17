@@ -1,4 +1,4 @@
-prefix=/home/g/Robotics-Assignment-1/arm_ws/install
+prefix=/home/leo/RoboticsAssignemnt_1/arm_ws/install
 
 Name: rotate_translate
 Description: Description of rotate_translate

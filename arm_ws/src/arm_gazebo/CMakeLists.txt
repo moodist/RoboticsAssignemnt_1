@@ -28,6 +28,13 @@ include_directories(${Boost_INCLUDE_DIR}
 add_library(${PROJECT_NAME} SHARED src/controller.cpp)
 target_link_libraries(${PROJECT_NAME} ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES} ${roscpp_LIBRARIES})
 
+add_library(GRIPPER SHARED src/GripController.cpp)
+target_link_libraries(GRIPPER ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES} ${roscpp_LIBRARIES})
+
+add_library(INVERSE_K SHARED src/KController.cpp)
+target_link_libraries(INVERSE_K ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES} ${roscpp_LIBRARIES})
+
+
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
@@ -67,14 +74,16 @@ target_link_libraries(${PROJECT_NAME} ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES} ${
  add_message_files(
    FILES
    JointPose.msg
+   GripperMessage.msg
+   PositionMessage.msg
  )
 
 ## Generate services in the 'srv' folder
-# add_service_files(
-#   FILES
-#   Service1.srv
-#   Service2.srv
-# )
+ add_service_files(
+   FILES
+   fk.srv
+   ik.srv
+)
 
 ## Generate actions in the 'action' folder
 # add_action_files(
@@ -177,10 +186,10 @@ DEPENDS roscpp gazebo_ros arm_lib
 
 ## Mark executable scripts (Python etc.) for installation
 ## in contrast to setup.py, you can choose the destination
-# catkin_install_python(PROGRAMS
-#   scripts/my_python_script
-#   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
-# )
+ catkin_install_python(PROGRAMS
+   scripts/fk.py scripts/ik.py
+   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+ )
 
 ## Mark executables for installation
 ## See http://docs.ros.org/melodic/api/catkin/html/howto/format1/building_executables.html

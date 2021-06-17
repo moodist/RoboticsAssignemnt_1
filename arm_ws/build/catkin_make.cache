@@ -1,2 +1,2 @@
 arm_description:arm_gazebo:arm_lib:rotate_translate
--DCATKIN_DEVEL_PREFIX=/home/g/Robotics-Assignment-1/arm_ws/devel -DCMAKE_INSTALL_PREFIX=/home/g/Robotics-Assignment-1/arm_ws/install -G Unix Makefiles
+-DCATKIN_DEVEL_PREFIX=/home/leo/RoboticsAssignemnt_1/arm_ws/devel -DCMAKE_INSTALL_PREFIX=/home/leo/RoboticsAssignemnt_1/arm_ws/install -G Unix Makefiles

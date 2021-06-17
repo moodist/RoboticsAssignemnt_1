@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "/home/g/Robotics-Assignment-1/arm_ws/devel/share/roseus/ros/rotate_translate/manifest.l"
-  "/home/g/Robotics-Assignment-1/arm_ws/devel/share/roseus/ros/rotate_translate/msg/InputType.l"
-  "/home/g/Robotics-Assignment-1/arm_ws/devel/share/roseus/ros/rotate_translate/msg/OutputType.l"
+  "/home/leo/RoboticsAssignemnt_1/arm_ws/devel/share/roseus/ros/rotate_translate/manifest.l"
+  "/home/leo/RoboticsAssignemnt_1/arm_ws/devel/share/roseus/ros/rotate_translate/msg/InputType.l"
+  "/home/leo/RoboticsAssignemnt_1/arm_ws/devel/share/roseus/ros/rotate_translate/msg/OutputType.l"
   "CMakeFiles/rotate_translate_generate_messages_eus"
 )
 

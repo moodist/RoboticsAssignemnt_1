@@ -67,14 +67,14 @@ set(arm_lib_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(arm_lib_SOURCE_PREFIX /home/g/Robotics-Assignment-1/arm_ws/src/arm_lib)
-  set(arm_lib_DEVEL_PREFIX /home/g/Robotics-Assignment-1/arm_ws/devel)
+  set(arm_lib_SOURCE_PREFIX /home/leo/RoboticsAssignemnt_1/arm_ws/src/arm_lib)
+  set(arm_lib_DEVEL_PREFIX /home/leo/RoboticsAssignemnt_1/arm_ws/devel)
   set(arm_lib_INSTALL_PREFIX "")
   set(arm_lib_PREFIX ${arm_lib_DEVEL_PREFIX})
 else()
   set(arm_lib_SOURCE_PREFIX "")
   set(arm_lib_DEVEL_PREFIX "")
-  set(arm_lib_INSTALL_PREFIX /home/g/Robotics-Assignment-1/arm_ws/install)
+  set(arm_lib_INSTALL_PREFIX /home/leo/RoboticsAssignemnt_1/arm_ws/install)
   set(arm_lib_PREFIX ${arm_lib_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/g/Robotics-Assignment-1/arm_ws/install/lib;/opt/ros/noetic/lib)
+    foreach(path /home/leo/RoboticsAssignemnt_1/arm_ws/install/lib;/home/leo/RoboticsAssignemnt_1/arm_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

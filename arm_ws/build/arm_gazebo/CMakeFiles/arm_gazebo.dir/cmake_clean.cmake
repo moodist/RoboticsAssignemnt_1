@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/g/Robotics-Assignment-1/arm_ws/devel/lib/libarm_gazebo.pdb"
-  "/home/g/Robotics-Assignment-1/arm_ws/devel/lib/libarm_gazebo.so"
+  "/home/leo/RoboticsAssignemnt_1/arm_ws/devel/lib/libarm_gazebo.pdb"
+  "/home/leo/RoboticsAssignemnt_1/arm_ws/devel/lib/libarm_gazebo.so"
   "CMakeFiles/arm_gazebo.dir/src/controller.cpp.o"
 )
 

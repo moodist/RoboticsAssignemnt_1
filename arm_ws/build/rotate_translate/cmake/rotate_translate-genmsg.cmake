@@ -2,7 +2,7 @@
 
 message(STATUS "rotate_translate: 2 messages, 0 services")
 
-set(MSG_I_FLAGS "-Irotate_translate:/home/g/Robotics-Assignment-1/arm_ws/src/rotate_translate/msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Irotate_translate:/home/leo/RoboticsAssignemnt_1/arm_ws/src/rotate_translate/msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -17,14 +17,14 @@ add_custom_target(rotate_translate_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/g/Robotics-Assignment-1/arm_ws/src/rotate_translate/msg/InputType.msg" NAME_WE)
+get_filename_component(_filename "/home/leo/RoboticsAssignemnt_1/arm_ws/src/rotate_translate/msg/InputType.msg" NAME_WE)
 add_custom_target(_rotate_translate_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rotate_translate" "/home/g/Robotics-Assignment-1/arm_ws/src/rotate_translate/msg/InputType.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rotate_translate" "/home/leo/RoboticsAssignemnt_1/arm_ws/src/rotate_translate/msg/InputType.msg" ""
 )
 
-get_filename_component(_filename "/home/g/Robotics-Assignment-1/arm_ws/src/rotate_translate/msg/OutputType.msg" NAME_WE)
+get_filename_component(_filename "/home/leo/RoboticsAssignemnt_1/arm_ws/src/rotate_translate/msg/OutputType.msg" NAME_WE)
 add_custom_target(_rotate_translate_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rotate_translate" "/home/g/Robotics-Assignment-1/arm_ws/src/rotate_translate/msg/OutputType.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rotate_translate" "/home/leo/RoboticsAssignemnt_1/arm_ws/src/rotate_translate/msg/OutputType.msg" ""
 )
 
 #
@@ -34,13 +34,13 @@ add_custom_target(_rotate_translate_generate_messages_check_deps_${_filename}
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(rotate_translate
-  "/home/g/Robotics-Assignment-1/arm_ws/src/rotate_translate/msg/InputType.msg"
+  "/home/leo/RoboticsAssignemnt_1/arm_ws/src/rotate_translate/msg/InputType.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/rotate_translate
 )
 _generate_msg_cpp(rotate_translate
-  "/home/g/Robotics-Assignment-1/arm_ws/src/rotate_translate/msg/OutputType.msg"
+  "/home/leo/RoboticsAssignemnt_1/arm_ws/src/rotate_translate/msg/OutputType.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/rotate_translate
@@ -60,9 +60,9 @@ add_custom_target(rotate_translate_generate_messages_cpp
 add_dependencies(rotate_translate_generate_messages rotate_translate_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/g/Robotics-Assignment-1/arm_ws/src/rotate_translate/msg/InputType.msg" NAME_WE)
+get_filename_component(_filename "/home/leo/RoboticsAssignemnt_1/arm_ws/src/rotate_translate/msg/InputType.msg" NAME_WE)
 add_dependencies(rotate_translate_generate_messages_cpp _rotate_translate_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/g/Robotics-Assignment-1/arm_ws/src/rotate_translate/msg/OutputType.msg" NAME_WE)
+get_filename_component(_filename "/home/leo/RoboticsAssignemnt_1/arm_ws/src/rotate_translate/msg/OutputType.msg" NAME_WE)
 add_dependencies(rotate_translate_generate_messages_cpp _rotate_translate_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -75,13 +75,13 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS rotate_translate_generate_messages_
 ### Section generating for lang: geneus
 ### Generating Messages
 _generate_msg_eus(rotate_translate
-  "/home/g/Robotics-Assignment-1/arm_ws/src/rotate_translate/msg/InputType.msg"
+  "/home/leo/RoboticsAssignemnt_1/arm_ws/src/rotate_translate/msg/InputType.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/rotate_translate
 )
 _generate_msg_eus(rotate_translate
-  "/home/g/Robotics-Assignment-1/arm_ws/src/rotate_translate/msg/OutputType.msg"
+  "/home/leo/RoboticsAssignemnt_1/arm_ws/src/rotate_translate/msg/OutputType.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/rotate_translate
@@ -101,9 +101,9 @@ add_custom_target(rotate_translate_generate_messages_eus
 add_dependencies(rotate_translate_generate_messages rotate_translate_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/g/Robotics-Assignment-1/arm_ws/src/rotate_translate/msg/InputType.msg" NAME_WE)
+get_filename_component(_filename "/home/leo/RoboticsAssignemnt_1/arm_ws/src/rotate_translate/msg/InputType.msg" NAME_WE)
 add_dependencies(rotate_translate_generate_messages_eus _rotate_translate_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/g/Robotics-Assignment-1/arm_ws/src/rotate_translate/msg/OutputType.msg" NAME_WE)
+get_filename_component(_filename "/home/leo/RoboticsAssignemnt_1/arm_ws/src/rotate_translate/msg/OutputType.msg" NAME_WE)
 add_dependencies(rotate_translate_generate_messages_eus _rotate_translate_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -116,13 +116,13 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS rotate_translate_generate_messages_
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(rotate_translate
-  "/home/g/Robotics-Assignment-1/arm_ws/src/rotate_translate/msg/InputType.msg"
+  "/home/leo/RoboticsAssignemnt_1/arm_ws/src/rotate_translate/msg/InputType.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/rotate_translate
 )
 _generate_msg_lisp(rotate_translate
-  "/home/g/Robotics-Assignment-1/arm_ws/src/rotate_translate/msg/OutputType.msg"
+  "/home/leo/RoboticsAssignemnt_1/arm_ws/src/rotate_translate/msg/OutputType.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/rotate_translate
@@ -142,9 +142,9 @@ add_custom_target(rotate_translate_generate_messages_lisp
 add_dependencies(rotate_translate_generate_messages rotate_translate_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/g/Robotics-Assignment-1/arm_ws/src/rotate_translate/msg/InputType.msg" NAME_WE)
+get_filename_component(_filename "/home/leo/RoboticsAssignemnt_1/arm_ws/src/rotate_translate/msg/InputType.msg" NAME_WE)
 add_dependencies(rotate_translate_generate_messages_lisp _rotate_translate_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/g/Robotics-Assignment-1/arm_ws/src/rotate_translate/msg/OutputType.msg" NAME_WE)
+get_filename_component(_filename "/home/leo/RoboticsAssignemnt_1/arm_ws/src/rotate_translate/msg/OutputType.msg" NAME_WE)
 add_dependencies(rotate_translate_generate_messages_lisp _rotate_translate_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -157,13 +157,13 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS rotate_translate_generate_messages_
 ### Section generating for lang: gennodejs
 ### Generating Messages
 _generate_msg_nodejs(rotate_translate
-  "/home/g/Robotics-Assignment-1/arm_ws/src/rotate_translate/msg/InputType.msg"
+  "/home/leo/RoboticsAssignemnt_1/arm_ws/src/rotate_translate/msg/InputType.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/rotate_translate
 )
 _generate_msg_nodejs(rotate_translate
-  "/home/g/Robotics-Assignment-1/arm_ws/src/rotate_translate/msg/OutputType.msg"
+  "/home/leo/RoboticsAssignemnt_1/arm_ws/src/rotate_translate/msg/OutputType.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/rotate_translate
@@ -183,9 +183,9 @@ add_custom_target(rotate_translate_generate_messages_nodejs
 add_dependencies(rotate_translate_generate_messages rotate_translate_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/g/Robotics-Assignment-1/arm_ws/src/rotate_translate/msg/InputType.msg" NAME_WE)
+get_filename_component(_filename "/home/leo/RoboticsAssignemnt_1/arm_ws/src/rotate_translate/msg/InputType.msg" NAME_WE)
 add_dependencies(rotate_translate_generate_messages_nodejs _rotate_translate_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/g/Robotics-Assignment-1/arm_ws/src/rotate_translate/msg/OutputType.msg" NAME_WE)
+get_filename_component(_filename "/home/leo/RoboticsAssignemnt_1/arm_ws/src/rotate_translate/msg/OutputType.msg" NAME_WE)
 add_dependencies(rotate_translate_generate_messages_nodejs _rotate_translate_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -198,13 +198,13 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS rotate_translate_generate_messages_
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(rotate_translate
-  "/home/g/Robotics-Assignment-1/arm_ws/src/rotate_translate/msg/InputType.msg"
+  "/home/leo/RoboticsAssignemnt_1/arm_ws/src/rotate_translate/msg/InputType.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/rotate_translate
 )
 _generate_msg_py(rotate_translate
-  "/home/g/Robotics-Assignment-1/arm_ws/src/rotate_translate/msg/OutputType.msg"
+  "/home/leo/RoboticsAssignemnt_1/arm_ws/src/rotate_translate/msg/OutputType.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/rotate_translate
@@ -224,9 +224,9 @@ add_custom_target(rotate_translate_generate_messages_py
 add_dependencies(rotate_translate_generate_messages rotate_translate_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/g/Robotics-Assignment-1/arm_ws/src/rotate_translate/msg/InputType.msg" NAME_WE)
+get_filename_component(_filename "/home/leo/RoboticsAssignemnt_1/arm_ws/src/rotate_translate/msg/InputType.msg" NAME_WE)
 add_dependencies(rotate_translate_generate_messages_py _rotate_translate_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/g/Robotics-Assignment-1/arm_ws/src/rotate_translate/msg/OutputType.msg" NAME_WE)
+get_filename_component(_filename "/home/leo/RoboticsAssignemnt_1/arm_ws/src/rotate_translate/msg/OutputType.msg" NAME_WE)
 add_dependencies(rotate_translate_generate_messages_py _rotate_translate_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

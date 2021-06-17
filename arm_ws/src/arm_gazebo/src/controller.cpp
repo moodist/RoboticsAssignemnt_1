@@ -23,18 +23,21 @@ namespace gazebo
         float angleDegree = 50; 
         float rad = M_PI * angleDegree/180 ;
 
-        this->joint_1_pid = common::PID(14, 11.2, 11);
+        this->joint_1_pid = common::PID(31.6, 10.02, 15.45);
 
-        this->joint_2_pid = common::PID(17, 12.1, 12);
+        this->joint_2_pid = common::PID(15, 5.1, 10);
 
-        this->joint_3_pid = common::PID(13, 9.1, 9);
+        this->joint_3_pid = common::PID(15, 5.1, 10);
 
-        this->joint_4_pid = common::PID(16, 13.3, 12);
+        this->joint_4_pid = common::PID(15, 5.1, 10);
+
+        this->joint_5_pid = common::PID(15, 5.1, 10);
 
         this->joint_1_name = "chasis_arm1_joint";
         this->joint_2_name = "arm1_arm2_joint";
         this->joint_3_name = "arm2_arm3_joint";
         this->joint_4_name = "arm3_arm4_joint";
+        this->joint_5_name = "arm4_arm5_joint";
 
                
 
@@ -42,26 +45,32 @@ namespace gazebo
         auto j2 = this->model->GetJoint(joint_2_name);
         auto j3 = this->model->GetJoint(joint_3_name);
         auto j4 = this->model->GetJoint(joint_4_name);
+        auto j5 = this->model->GetJoint(joint_5_name);
 
         std::string j_name_1 = j1->GetScopedName();
 
         this->jointController->SetPositionPID(j_name_1, joint_1_pid);
-        this->jointController->SetPositionTarget(j_name_1, 1.0);
+        this->jointController->SetPositionTarget(j_name_1, 0.4);
 
         std::string j_name_2 = j2->GetScopedName();
 
         this->jointController->SetPositionPID(j_name_2, joint_2_pid);
-        this->jointController->SetPositionTarget(j_name_2, -1.0);
+        this->jointController->SetPositionTarget(j_name_2, 0.3);
 
         std::string j_name_3 = j3->GetScopedName();
 
         this->jointController->SetPositionPID(j_name_3, joint_3_pid);
-        this->jointController->SetPositionTarget(j_name_3, rad);
+        this->jointController->SetPositionTarget(j_name_3, 1.0);
 
         std::string j_name_4 = j4->GetScopedName();
 
         this->jointController->SetPositionPID(j_name_4, joint_4_pid);
-        this->jointController->SetPositionTarget(j_name_4, -rad);
+        this->jointController->SetPositionTarget(j_name_4, 0.4);
+
+        std::string j_name_5 = j4->GetScopedName();
+
+        this->jointController->SetPositionPID(j_name_5, joint_5_pid);
+        this->jointController->SetPositionTarget(j_name_5, 0.3);
 
         
         this->rosPub = this->rosNode.advertise<arm_gazebo::JointPose>("jointpose", 10);
@@ -106,6 +115,7 @@ namespace gazebo
         this->jointController->SetPositionTarget(J_name_4, msg->angleFour);
 
 
+
     }
     
     //called by the world update start event
@@ -115,6 +125,7 @@ namespace gazebo
         auto j2 = this->model->GetJoint(this->joint_2_name);
         auto j3 = this->model->GetJoint(this->joint_3_name);
         auto j4 = this->model->GetJoint(this->joint_4_name);
+        auto j5 = this->model->GetJoint(this->joint_5_name);
 
         arm_gazebo::JointPose msg;
 
@@ -145,10 +156,13 @@ namespace gazebo
 
     private: common::PID joint_4_pid;
 
+    private: common::PID joint_5_pid;
+
     private: std::string joint_1_name;
     private: std::string joint_2_name;
     private: std::string joint_3_name;
     private: std::string joint_4_name;
+    private: std::string joint_5_name;
 
 
     private: ros::NodeHandle rosNode;

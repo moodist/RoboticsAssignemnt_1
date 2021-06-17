@@ -1,8 +1,8 @@
-prefix=/home/g/Robotics-Assignment-1/arm_ws/devel
+prefix=/home/leo/RoboticsAssignemnt_1/arm_ws/devel
 
 Name: rotate_translate
 Description: Description of rotate_translate
 Version: 0.0.0
-Cflags: -I/home/g/Robotics-Assignment-1/arm_ws/devel/include
+Cflags: -I/home/leo/RoboticsAssignemnt_1/arm_ws/devel/include
 Libs: -L${prefix}/lib 
 Requires: message_runtime

@@ -1,4 +1,4 @@
-prefix=/home/g/Robotics-Assignment-1/arm_ws/devel
+prefix=/home/leo/RoboticsAssignemnt_1/arm_ws/devel
 
 Name: arm_lib
 Description: Description of arm_lib

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "/home/g/Robotics-Assignment-1/arm_ws/devel/lib/python3/dist-packages/rotate_translate/msg/_InputType.py"
-  "/home/g/Robotics-Assignment-1/arm_ws/devel/lib/python3/dist-packages/rotate_translate/msg/_OutputType.py"
-  "/home/g/Robotics-Assignment-1/arm_ws/devel/lib/python3/dist-packages/rotate_translate/msg/__init__.py"
+  "/home/leo/RoboticsAssignemnt_1/arm_ws/devel/lib/python3/dist-packages/rotate_translate/msg/_InputType.py"
+  "/home/leo/RoboticsAssignemnt_1/arm_ws/devel/lib/python3/dist-packages/rotate_translate/msg/_OutputType.py"
+  "/home/leo/RoboticsAssignemnt_1/arm_ws/devel/lib/python3/dist-packages/rotate_translate/msg/__init__.py"
   "CMakeFiles/rotate_translate_generate_messages_py"
 )
 

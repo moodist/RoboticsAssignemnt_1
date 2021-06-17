@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/g/Robotics-Assignment-1/arm_ws/devel/share/gennodejs/ros/rotate_translate/msg/InputType.js"
-  "/home/g/Robotics-Assignment-1/arm_ws/devel/share/gennodejs/ros/rotate_translate/msg/OutputType.js"
+  "/home/leo/RoboticsAssignemnt_1/arm_ws/devel/share/gennodejs/ros/rotate_translate/msg/InputType.js"
+  "/home/leo/RoboticsAssignemnt_1/arm_ws/devel/share/gennodejs/ros/rotate_translate/msg/OutputType.js"
   "CMakeFiles/rotate_translate_generate_messages_nodejs"
 )
 

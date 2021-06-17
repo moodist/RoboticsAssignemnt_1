@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/g/Robotics-Assignment-1/arm_ws/devel/include/arm_gazebo/JointPose.h
+/home/leo/RoboticsAssignemnt_1/arm_ws/devel/include/arm_gazebo/JointPose.h
 string
 -
 vector
@@ -22,7 +22,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/g/Robotics-Assignment-1/arm_ws/src/arm_gazebo/src/controller.cpp
+/home/leo/RoboticsAssignemnt_1/arm_ws/src/arm_gazebo/src/controller.cpp
 functional
 -
 gazebo/gazebo.hh
@@ -34,9 +34,9 @@ gazebo/common/common.hh
 ignition/math/Vector3.hh
 -
 ros/ros.h
-/home/g/Robotics-Assignment-1/arm_ws/src/arm_gazebo/src/ros/ros.h
+/home/leo/RoboticsAssignemnt_1/arm_ws/src/arm_gazebo/src/ros/ros.h
 arm_gazebo/JointPose.h
-/home/g/Robotics-Assignment-1/arm_ws/src/arm_gazebo/src/arm_gazebo/JointPose.h
+/home/leo/RoboticsAssignemnt_1/arm_ws/src/arm_gazebo/src/arm_gazebo/JointPose.h
 
 /opt/ros/noetic/include/ros/advertise_options.h
 ros/forwards.h
