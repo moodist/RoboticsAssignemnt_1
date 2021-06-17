@@ -128,6 +128,7 @@ namespace gazebo
             std::bind(&KinematicsController::OnUpdate, this)
         );
     }
+    
     //called by the world update start event
     public : void OnUpdate()
     {
